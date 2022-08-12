@@ -12,5 +12,5 @@
   @apply mr-2 text-white font-medium bg-Dark_Cyan w-[3.25rem] rounded-[2rem] text-sm px-1.5 py-1 uppercase grid place-items-center;
 }
 .card-container {
-  @apply lg:h-[9.6875rem] w-full bg-white px-5 pt-8 md:py-8 md:px-7 lg:px-9 rounded-md flex items-start md:items-center justify-start md:justify-between flex-col md:flex-row shadow-xl shadow-Dark_Cyan/20 mb-10 md:mb-6 relative hover:scale-105 duration-300 cursor-pointer;
+  @apply lg:h-[9.6875rem] w-full bg-white px-5 pt-8 md:py-8 md:px-7 lg:px-9 rounded-md flex items-start md:items-center justify-start md:justify-between flex-col lg:flex-row shadow-xl shadow-Dark_Cyan/20 mb-10 md:mb-6 relative hover:scale-105 duration-300 cursor-pointer;
 }

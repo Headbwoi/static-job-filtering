@@ -17,12 +17,9 @@ const Cards = ({
         {/* <!-- left --> */}
         <div className="relative flex items-start justify-start w-full flex-col md:flex-row border-b border-Dark_Grayish_Cyan md:border-none">
           {/* <!-- logo --> */}
+
           <div className="h-[3.125rem] w-[3.125rem] md:w-[5.625rem] md:h-[5.625rem] absolute -top-14 left-0 md:relative md:top-0 mr-6">
-            <img
-              src={process.env.PUBLIC_URL + logo}
-              alt="photosnap"
-              className="w-full h-full"
-            />
+            <img src={logo} alt={company} className="w-full h-full" />
           </div>
           {/* <!-- text --> */}
           <div>
@@ -51,7 +48,7 @@ const Cards = ({
           </div>
         </div>
         {/* <!-- right/ roles --> */}
-        <div className="mt-4 md:mt-0 flex gap-[1.125rem] flex-wrap md:flex-nowrap mb-6 md:mb-0">
+        <div className="mt-4 lg:mt-0 flex gap-[1.125rem] flex-wrap md:flex-nowrap mb-6 md:mb-0">
           {jobTags.map((tag, index) => {
             return (
               <button

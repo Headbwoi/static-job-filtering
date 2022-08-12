@@ -1,10 +1,10 @@
 import React from "react"
 
-const Filters = ({ filters, clearAll, clearFilter }) => {
+const Filters = ({ filters, clearAll, deleteFilter }) => {
   return (
     <>
-      <div className="w-full flex items-center justify-center h-24 bg-white px-5 md:px-7 lg:px-9 rounded-md shadow-xl shadow-Dark_Cyan/20 mb-10 md:mb-6 cursor-pointer">
-        <div className="active-filters h-5 p-1 flex items-center gap-4 flex-wrap">
+      <div className="-mt-32 w-full flex items-center justify-center min-h-[4.625rem] py-12 bg-white px-5 md:px-7 lg:px-9 rounded-md shadow-xl shadow-Dark_Cyan/20 mb-10 md:mb-6 cursor-pointer overflow-x-hidden z-50 relative">
+        <div className="active-filters flex items-center gap-4 flex-wrap max-w-[75%]">
           {filters.map((tag, index) => {
             return (
               <div
@@ -12,10 +12,10 @@ const Filters = ({ filters, clearAll, clearFilter }) => {
                 className="h-7
                  w-fit flex items-center text-Dark_Cyan font-bold bg-Filter_Tablets"
               >
-                <p className="mr-1">{tag}</p>
+                <p className="mr-1 px-2">{tag}</p>
                 <button
                   onClick={() => {
-                    clearFilter(tag)
+                    deleteFilter(tag)
                   }}
                   className="h-full w-7 grid place-items-center bg-Dark_Cyan hover:bg-Very_Dark_Grayish_Cyan"
                 >
@@ -25,7 +25,6 @@ const Filters = ({ filters, clearAll, clearFilter }) => {
                     height="14"
                     className="text-Filter_Tablets"
                   >
-                    <title>remove filter</title>
                     <path
                       fill="#FFF"
                       fillRule="evenodd"
@@ -42,7 +41,7 @@ const Filters = ({ filters, clearAll, clearFilter }) => {
             onClick={() => {
               clearAll()
             }}
-            className="text-base text-Dark_Grayish_Cyan"
+            className="text-base text-Dark_Grayish_Cyan font-bold hover:underline hover:text-Dark_Cyan"
           >
             Clear
           </button>
