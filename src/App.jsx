@@ -25,7 +25,7 @@ function App() {
     <>
       <Header />
 
-      <div className="container px-6 lg:px-0 ">
+      <div className="container px-6 lg:px-0 pb-10">
         {filters.length > 0 && (
           <Filters
             filters={filters}
